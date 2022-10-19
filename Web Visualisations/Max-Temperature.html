@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude Analysis - Max Temperature</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Load an icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="Index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Max-Temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Wind-Speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar-->
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <h1>Max Temperature</h1>
+                    <hr>
+                    <img class="img-fluid" alt="Responsive image" src="./Resources/assets/images/Latitude_vs_Temperature.png"
+                        alt="City Latitude vs. Max Temperature">
+
+                    <p>The Graph shows us that the cities nearest the equator (0 Latitude) are the ones that record the 
+                        highest temperatures. Cities around 60 degrees north of Earth's equator record max temperatures 
+                        of around 50°F which is equal to around 10°C. 
+
+                    </p>These temperatures are considerably lower than those recorded on the southern hemisphere and those 
+                    closest to the equator.
+                        </p>
+                    <br />
+
+                </article>
+            </div>
+
+            <div class="col-lg-4 visualization">
+                <article>
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <!-- <div class="borderbox"> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <a href="Max-Temperature.html">
+                                    <img class="img-fluid" src="./Resources/assets/images/Latitude_vs_Temperature.png"
+                                        alt="City Latitude vs. Max Temperature" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Humidity.html">
+                                    <img class="img-fluid" src="./Resources/assets/images/Latitude_vs_Humidity.png"
+                                        alt="City Latitude vs. Humidity" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="Cloudiness.html">
+                                    <img class="img-fluid" src="./Resources/assets/images/CityLatitude_vs_Cloudiness.png"
+                                        alt="City Latitude vs. Cloudiness" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="Wind-Speed.html">
+                                    <img class="img-fluid img-active"
+                                        src="./Resources/assets/images/CityLatitude_vs_WindSpeed.png"
+                                        alt="City Latitude vs. Wind Speed" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3">© Copyright Data Analytics Bootcamp 2022
+        </div>      
+    </footer>
+</body>
+</html>
